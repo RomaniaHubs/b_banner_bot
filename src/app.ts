@@ -42,7 +42,7 @@ bot.command(
           ctx.message.reply_to_message.from.id
         )
       } catch (err) {
-        ctx.reply(`Ошибка: ${err.message || err}`)
+        ctx.reply(`Eroare: ${err.message || err}`)
       }
     }
     await ctx.replyWithHTML(
