@@ -22,7 +22,7 @@ bot.use((ctx, next) => {
   }
   if (ctx.chat?.type === 'private') {
     return ctx.reply(
-      'Нет смысла писать мне, вас тут не разбанят, а ваши сообщения уходят вникуда. В вакууме никто не услышит, как вы кричите.'
+      'Nu are rost să-mi scrii, nu vei fi interzis aici, iar mesajele tale nu merg nicăieri. Într-un vid, nimeni nu te va auzi țipând.'
     )
   }
   return next()
@@ -46,7 +46,7 @@ bot.command(
       }
     }
     await ctx.replyWithHTML(
-      `<a href="tg://user?id=${ctx.message.reply_to_message.from.id}">Пользователь</a> забанен по всем сообществам`
+      `<a href="tg://user?id=${ctx.message.reply_to_message.from.id}">Utilizator</a> interzis pe toate comunitățile`
     )
     await ctx.deleteMessage()
   }
