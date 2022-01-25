@@ -55,5 +55,5 @@ bot.command(
 bot.catch(console.error)
 // Start bot
 bot.launch().then(() => {
-  console.info('Bot is up and running')
+  console.info('Bot-ul rulează la parametri nomali.')
 })
